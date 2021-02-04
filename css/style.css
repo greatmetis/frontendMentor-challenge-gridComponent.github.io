@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+}
+
+h1 {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Karla", sans-serif, Arial, Helvetica;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Karla", sans-serif, Arial, Helvetica;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: "Karla", sans-serif, Arial, Helvetica;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+html,
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d7dce5;
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 16px 32px;
+  min-width: 100px;
+  cursor: pointer;
+  outline: none;
+  background-color: #c0df34;
+  color: #fff;
+  border: transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #c7e34a;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 24px;
+  line-height: 60px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 32px;
+  }
+}
+
+.top {
+  background-color: #eee;
+  padding: 32px;
+}
+
+.top .title {
+  color: #2ab2af;
+}
+
+.top .subtitle {
+  color: #b7d822;
+}
+
+.top .info {
+  color: #98a6bd;
+}
+
+.bottom {
+  background-color: #2ab2af;
+  color: #e5eff5;
+}
+
+.bottom .subscription {
+  padding: 32px;
+}
+
+.bottom .subscription .subscription_price {
+  font-size: 48px;
+}
+
+.bottom .subscription .subscription_price span {
+  font-size: 12px;
+  color: #e5eff5;
+  opacity: 0.5;
+}
+
+.bottom .subscription .info {
+  color: #e5eff5;
+  opacity: 0.8;
+}
+
+.bottom .subscription button {
+  width: 100%;
+  margin: 16px auto;
+}
+
+.bottom .why-section {
+  padding: 32px;
+  background-color: #2dbebc;
+}
+
+.bottom .why-section li {
+  opacity: 0.7;
+  line-height: 1.5em;
+}
+
+footer {
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    bottom: -32px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

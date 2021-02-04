@@ -1,0 +1,220 @@
+// *--------------------*//
+// Catagory
+// *--------------------*//
+// * Color
+// * Typography
+// * Mixin
+// * Global
+// * Components
+
+// *--------------------*//
+// Color
+// *--------------------*//
+
+$color--primary: hsl(179, 62%, 43%);
+$color--primary-bright: hsl(71, 73%, 54%);
+$color--gray-light: hsl(204, 43%, 93%);
+$color--blue-grayish: hsl(218, 22%, 67%);
+
+// *--------------------*//
+// Typography
+// *--------------------*//
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+}
+h1 {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+h4 {
+  font-family: "Karla", sans-serif, Arial, Helvetica;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+}
+h5 {
+  font-family: "Karla", sans-serif, Arial, Helvetica;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+h6 {
+  font-family: "Karla", sans-serif, Arial, Helvetica;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Karla", Helvetica, sans-serif, Arial;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+// *--------------------*//
+// Global
+// *--------------------*//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lighten($color--blue-grayish, 20);
+  font-family: Helvetica, sans-serif, Arial;
+}
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+}
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 16px 32px;
+  min-width: 100px;
+  cursor: pointer;
+  outline: none;
+  background-color: $color--primary-bright;
+  color: #fff;
+  border: transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(black, 0.2);
+  &:hover {
+    background-color: lighten($color--primary-bright, 5);
+    box-shadow: 0 0 10px rgba(black, 0.3);
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 60px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.subtitle {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+// @media (max-width: 576px) {
+//   .title {
+//     font-size: 16px;
+//     line-height: 32px;
+//   }
+// }
+
+// *--------------------*//
+// Components
+// *--------------------*//
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0, 0, 10px rgba(black, 0.2);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 32px;
+  }
+}
+// top
+.top {
+  background-color: #eee;
+  padding: 32px;
+  .title {
+    color: $color--primary;
+  }
+  .subtitle {
+    color: darken($color--primary-bright, 5);
+  }
+  .info {
+    color: $color--blue-grayish;
+  }
+}
+// @media (max-width: 576px) {
+//   .top {
+//     padding: 16px;
+//   }
+// }
+
+// bottom
+.bottom {
+  background-color: $color--primary;
+  color: $color--gray-light;
+  .subscription {
+    padding: 32px;
+    .subscription_price {
+      font-size: 48px;
+      span {
+        font-size: 12px;
+        color: $color--gray-light;
+        opacity: 0.5;
+      }
+    }
+    .info {
+      color: $color--gray-light;
+      opacity: 0.8;
+    }
+    button {
+      width: 100%;
+      margin: 16px auto;
+    }
+  }
+  .why-section {
+    padding: 32px;
+    background-color: lighten($color--primary, 3);
+    li {
+      opacity: 0.7;
+      line-height: 1.5em;
+    }
+  }
+}
+
+// Footer
+footer {
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    bottom: -32px;
+  }
+}
