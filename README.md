@@ -21,18 +21,18 @@ The designs were created to the following widths:
 - Cyan: hsl(179, 62%, 43%)
 - Bright Yellow: hsl(71, 73%, 54%)
 
-##### Neutral
+###### Neutral
 
 - Light Gray: hsl(204, 43%, 93%)
 - Grayish Blue: hsl(218, 22%, 67%)
 
-#### Typography
+##### Typography
 
-##### Body Copy
+###### Body Copy
 
 - Font size: 16px
 
-##### Font
+###### Font
 
 - Family: [Karla](https://fonts.google.com/specimen/Karla)
 - Weights: 400, 700
